@@ -5,13 +5,7 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCpZMXhVY7bqI4uzdgoK8FJ9rhPq2l_xMk",
-    authDomain: "denemeyeniproje.firebaseapp.com",
-    databaseURL: "https://denemeyeniproje.firebaseio.com",
-    projectId: "denemeyeniproje",
-    storageBucket: "denemeyeniproje.appspot.com",
-    messagingSenderId: "372452615949",
-    appId: "1:372452615949:web:a5c003a2e1d19042fe3244"
+    //firebase erişim bilgileri
   }
 };
 
