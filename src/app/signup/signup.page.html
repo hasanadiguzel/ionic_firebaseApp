@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Firebase Kayıt Ol</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+		<ion-list inset>
+
+			<ion-item>
+				<ion-input type="text" placeholder="E-Posta" [(ngModel)]="eposta"></ion-input>
+			</ion-item>
+
+			<ion-item>
+				<ion-input type="password" placeholder="Parola" [(ngModel)]="parola"></ion-input>
+			</ion-item>
+
+		</ion-list>
+
+		<div class="ion-padding-horizontal">
+			<div>{{girisHata}}</div>
+
+			<ion-button expand="full" (click)="kayitOl()">Kayıt Ol</ion-button>
+		</div>
+</ion-content>

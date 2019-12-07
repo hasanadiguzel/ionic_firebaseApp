@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Giriş</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+		<ion-list inset>
+			<ion-item>
+				<ion-input type="text" placeholder="E-Posta" [(ngModel)]="eposta"></ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-input type="password" placeholder="Parola" [(ngModel)]="parola"></ion-input>
+			</ion-item>
+		</ion-list>
+
+		<div class="ion-padding-horizontal">
+			<div>{{ girisHata }}</div>
+
+			<ion-button expand="full" (click)="login()">Giriş Yap</ion-button>
+			<div class="login-footer">
+				<p>
+					<a href="#">Şifremi Unuttum!</a>
+				</p>
+			</div>
+
+			<ion-list>
+
+				<ion-button expand="full" icon-left block clear (click)="loginWithGoogle()">
+					<ion-icon slot="start" name="logo-google"></ion-icon>
+					Google ile Giriş Yap
+				</ion-button>
+
+				<ion-button ion-button icon-left block clear (click)="kayitOl()">
+					<ion-icon slot="start" name="person-add"></ion-icon>
+					Kayıt Ol
+				</ion-button>
+			</ion-list>
+		</div>
+</ion-content>
